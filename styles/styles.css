@@ -1,0 +1,38 @@
+
+.color-primary-0 { color: #2D4471 }	/* Main Primary color */
+.color-primary-1 { color: #EEF1F5 }
+.color-primary-2 { color: #7284A7 }
+.color-primary-3 { color: #07193C }
+.color-primary-4 { color: #000206 }
+
+body {
+    background-color: #2D4471;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #07193C;
+  }
+  
+nav {
+    display: flex;
+}
+  
+  li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #000206;
+  }
+main {
+    width: 960px;
+}
+
