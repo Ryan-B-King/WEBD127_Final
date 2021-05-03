@@ -16,10 +16,7 @@ ul {
     overflow: hidden;
     background-color: #07193C;
   }
-  
-nav {
-    display: flex;
-}
+
   
   li a {
     display: flex;
