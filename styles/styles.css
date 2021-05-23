@@ -1,98 +1,205 @@
 
-.color-primary-0 { color: #2D4471 }	/* Main Primary color */
-.color-primary-1 { color: #EEF1F5 }
-.color-primary-2 { color: #7284A7 }
-.color-primary-3 { color: #07193C }
-.color-primary-4 { color: #000206 }
+/* font-family: 'Oswald', sans-serif; -- CSS code to use Oswald Font */
+/* font location: https://fonts.google.com/share?selection.family=Oswald:wght@200;300;400;500;600;700 */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-  background-color: #2D4471;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
-li, a, button {
-  font-size: 16px;
-  text-decoration: none;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
 }
 
-nav {
-  background-color: #07193C;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-#home {
-  cursor: pointer;
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
+.navbar-links li {
+    list-style-type: none;
 }
 
-.nav_links li a {
-  transition: all 0.3s ease 0s;
-  color: #EEF1F5;
-  font-weight: bold;
-  font-size: 2em;
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
 }
 
-.nav_links li a:hover {
-  color: #2D4471  
+.navbar-links li:hover {
+    background-color: #555;
 }
 
-button {
-  padding: 9px 25px;
-  background-color: rgb(114, 132, 167, 0.5);
-  border:none;
-  border-radius:  50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  color: #EEF1F5;
-  font-weight: bold;
-  font-size: 1.5em;
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-button:hover {
-  background-color: rgb(114, 132, 167, 1);
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 main {
-  width: 960px;
+    height: 100vh;
+}
+
+.section-container {
+    background-color: rgb(241, 237, 237);
+    font-size: 2rem;
+    margin: 100px 15px 50px 15px;
+    text-align: center;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    background-color: rgb(112, 168, 223);
+}
+
+.action-button p {
+    display: block;
+    text-align: center;
+}
+
+.action-button p a {
+    text-decoration: none;
 }
 
 footer {
-  width: 100%;
-  height: 300px;
-  background-color: #07193C;
-  color: #EEF1F5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    height: 56px;
+    padding-top: 20px;
+    bottom: 0px;
+    margin-top: 100px;
 }
 
-#explore {
-  color: #EEF1F5;
-  grid-column:  2;
-  padding-left: 40%;
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .section-container {
+        margin: 50px 15px 50px 15px;
+    }
+
 }
 
-#explore a {
-  font-size: 1.5em;
-  color: #EEF1F5;
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
 }
 
-#copyright {
-  padding: 175px 175px 0 0;
-  text-align: right;
-  grid-column: 3;
+.accordion-item {
+    background-color: rgb(241, 237, 237);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.accordion-item-header::after {
+    content: '\002B';
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordion-item-header.active::after {
+    content: '\2212';
 }
 
 
-.footer_links {
-  transition: all 0.3s ease 0s;
-  color: #EEF1F5;
-  font-weight: bold;
-  font-size: 2em;
+
+
+
+
+
+
+
+@media (min-width: 450px) {
+    .action-button {
+        width: 400px;
+        margin: auto;
+    }
 }
+
+@media (min-width: 960px) {
+    main {
+        width: 960px;
+        margin: auto;
+    }
+}
+
+
 

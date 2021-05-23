@@ -4,43 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escrow Trainer</title>
     <link rel='stylesheet' href='styles/normalize.css'>
     <link rel='stylesheet' href='styles/styles.css'>
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src='js/script.js' defer></script>
+    <title>Document</title>
 </head>
 <body>
-<header></header>    
+    <nav class='navbar'>
+        <div class='brand-title'>Escrow Trainer</div>
+        <a href='#' class='toggle-button'>
+            <span class='bar'></span>
+            <span class='bar'></span>
+            <span class='bar'></span>
+        </a>
+        <div class='navbar-links'>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='#'>Training</a></li>
+                <li><a href='#'>Resources</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-    <a href='index.html'><img id='home' src='images/home_iconV4.png'></a>
-    <ul class='nav_links'>
-        <li><a href='refi.html'>Refinance</a></li>
-        <li><a href='resale.html'>Resale</a></li>
-        <li><a href='resources.html'>Resources</a></li>
-        <li><a href='about.html'>About</a></li>    
-    </ul>
-    <a class='cta' href='contact.html'><button>Contact Us</button></a>
-</nav>
+    <main>
 
-<main>
-<h1>RESOURCES PAGE</h1>
-</main>
+        <div class='section-container'><p>Welcome to<br> <i style="font-size: 2.5rem;">Escrow Trainer</i></p><p>This is a 'how-to-guide' in learning the life of a <u>REFINANCE ESCROW</u>.  This guide is targeted to new hires and escrow assistants looking to enchance their knowledge.</p></div>
 
-<footer>
-    <div id='explore'>
-        <h1>Explore</h1>
-        <a class='footer_links' href='refi.html'>Refinance</a></br>
-        <a class='footer_links' href='resale.html'>Resale</a></br>
-        <a class='footer_links' href='resources.html'>Resources</a></br>
-        <a class='footer_links' href='about.html'>About</a></br>
-        <a class='footer_links' href='contact.html'>Contact Us</a>
-    </div>
-    
-    
-    <p id='copyright'>&copy2021 Escrow Trainer</p>
-</footer>
+        <div class='section-container action-button'><p><a href='#'>CLICK HERE<br>TO GET STARTED</a></p></div>
+
+        <div class='accordion'>
+            <div class='accordion-item'>
+                <div class='accordion-item-header'>
+                    Title Company Information
+                </div>
+                <div class='accordion-item-body'>
+                    <div class="accordian-item-body-content">
+                        <a>First American Title Company</a>
+                    </div>
+                </div>
+                <div class='accordion-item-body'>
+                    <div class="accordian-item-body-content">
+                        <a>Ticor Title Company</a>
+                    </div>
+                </div>
+                <div class='accordion-item-body'>
+                    <div class="accordian-item-body-content">
+                        <a>Stewart Title Company</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class='accordion-item'>
+                <div class='accordion-item-header'>
+                    County Offices
+                </div>
+                <div class='accordion-item-body'>
+                    <div class="accordian-item-body-content">
+                        San Diego County Assessor | Recorder | County Clerk
+                    </div>
+                    <div class="accordian-item-body-content">
+                        San Diego County Treasurer-Tax Collector
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer>&copy Escrow Trainer 2021</footer>
 </body>
 </html>
